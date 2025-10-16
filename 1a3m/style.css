@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f7f0f5; /* Cor de fundo suave */
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+}
+
+h1 {
+    color: #e91e63; /* Rosa forte */
+    margin-bottom: 20px;
+}
+
+.question-area {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f8f3f3; /* Fundo leve para a pergunta */
+    border-radius: 10px;
+    min-height: 60px; /* Para manter o layout estável */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#question-text {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.buttons-area {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.vote-button {
+    flex-grow: 1;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    white-space: nowrap; /* Evita quebra de linha nos nomes */
+}
+
+#btn-p1 {
+    background-color: #ffcdd2; /* Rosa claro */
+    color: #c2185b;
+}
+
+#btn-p2 {
+    background-color: #94A473; /* Azul claro */
+    color: #606b4b;
+}
+
+.vote-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Resultados */
+.results-area h2 {
+    color: #677c68; /* Verde de sucesso */
+    margin-top: 30px;
+}
+
+.result-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.result-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Círculo */
+    object-fit: cover;
+    border: 5px solid #e91e63;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.percentage {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #e91e63;
+    margin-top: 5px;
+}
+
+.final-message {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}

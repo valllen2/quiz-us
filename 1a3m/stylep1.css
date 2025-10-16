@@ -1,0 +1,126 @@
+/* Importando fontes do Google Fonts: Montserrat para um estilo clean */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+    --my-favorite-color: #F70A7D; /* Sua cor favorita: Rosa Forte */
+    --her-favorite-color: #94A473; /* Cor favorita dela: Verde Oliva */
+    --background-light: #fdfdfd;
+    --text-color-dark: #333;
+    --text-color-light: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background-light);
+    color: var(--text-color-dark);
+}
+
+.intro-container {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: var(--background-light);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    border-radius: 10px;
+}
+
+/* --- Navbar (Topo) --- */
+.navbar {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee; /* Linha divisória fina */
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--her-favorite-color);
+    letter-spacing: 2px;
+}
+
+/* --- Seção Principal --- */
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.anniversary-text p {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.anniversary-text h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--my-favorite-color);
+    margin: 0 0 40px 0; /* Espaçamento abaixo do título */
+    line-height: 1.1;
+}
+
+/* --- Foto de Casal (Limpa e Centralizada) --- */
+.photo-wrapper {
+    width: 100%;
+    max-width: 350px; /* Tamanho razoável para a foto */
+    height: 350px;
+    margin-bottom: 40px;
+    border-radius: 50%; /* Foto Circular */
+    overflow: hidden;
+    /* Borda elegante com a cor dela */
+    border: 5px solid var(--her-favorite-color); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra para destaque */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a foto cubra o círculo sem distorcer */
+    display: block;
+}
+
+/* --- Botão --- */
+.start-button {
+    background-color: var(--my-favorite-color);
+    color: var(--text-color-light);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px; /* Borda bem arredondada para um visual moderno */
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.start-button:hover {
+    background-color: #d1086e; /* Tom mais escuro */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(247, 10, 125, 0.4); /* Sombra com a cor principal */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .anniversary-text h1 {
+        font-size: 2.5em;
+    }
+    .photo-wrapper {
+        max-width: 250px;
+        height: 250px;
+    }
+    .start-button {
+        font-size: 1em;
+        padding: 12px 30px;
+    }
+}
